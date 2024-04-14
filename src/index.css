@@ -29,13 +29,22 @@ p {
 body {
   display: flex;
   justify-content: center;
+  height: 100vh;
+  background-image: url("./assets/background-pattern-mobile.svg");
+  background-color: var(--Lightpink);
+  background-repeat: no-repeat;
+  background-size: 30rem auto;
 }
 
 .wrapper {
-  border: 1px solid red;
+  margin-top: 10rem;
   max-width: 23rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
+  background-color: var(--White);
+  box-shadow: 4px 4px 22px 3px rgba(47, 21, 51, 0.75);
+  -webkit-box-shadow: 4px 4px 22px 3px rgba(47, 21, 51, 0.75);
+  -moz-box-shadow: 4px 4px 22px 3px rgba(47, 21, 51, 0.75);
 }
 
 .faq-container {
@@ -81,8 +90,4 @@ body {
     font-weight: 600;
     font-size: 1rem;
   }
-}
-
-li > p {
-  display: block;
 }
