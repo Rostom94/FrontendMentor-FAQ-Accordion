@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root,
+html,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Lightpink: hsl(275, 100%, 97%);
+  --Grayishpurple: hsl(292, 16%, 49%);
+  --Darkpurple: hsl(292, 42%, 14%);
+}
+
+h1,
+h2 {
+  color: var(--Darkpurple);
+}
+
+p {
+  color: var(--Grayishpurple);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  border: 1px solid red;
+  max-width: 23rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.faq-container {
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.3rem;
+
+  & h1 {
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  & > img {
+    height: 1.5rem;
+  }
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+
+  & p {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  & img:hover {
+    cursor: pointer;
+  }
+
+  & h2 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+li > p {
+  display: block;
+}
